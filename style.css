@@ -78,6 +78,10 @@ header {
   position: relative;
 }
 
+.firstview-margin {
+  padding: 300px 40px 0px;
+}
+
 .firstview-image {
   position: absolute;
   z-index: -1;
