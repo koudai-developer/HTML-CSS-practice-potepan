@@ -72,6 +72,22 @@ header {
   transition: 0.2s;
 }
 
+/* ナビゲーション（ハンバーガーメニュー） */
+.header-humburger {
+  display: none;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.header-hamburger-line {
+  display: none;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  margin-bottom: 7px;
+}
+
 /* ファーストビュー */
 .firstview {
   height: 740px;
@@ -141,7 +157,23 @@ header {
 }
 
 .main-visual {
-  height: 580px;
+  height: 630px;
   right: 0;
   top: -70px;
+}
+
+/* 1080p以下で適用するスタイル */
+@media screen and (max-width: 1080px) {
+  /* ナビゲーションを消してハンバーガーにする */
+  .header-navlist {
+    display: none;
+  }
+
+  .header-humburger {
+    display: block;
+  }
+
+  .header-hamburger-line {
+    display: block;
+  }
 }
